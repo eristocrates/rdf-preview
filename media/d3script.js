@@ -122,7 +122,7 @@ function fitNodes(nodes, width, height, container) {
         .attr("transform", `translate(${translateX},${translateY}) scale(${scale})`);
 }
 
-window.updateGraph = function(newNodes, newLinks) {
+window.updateGraph = function (newNodes, newLinks) {
     if (!window.simulation || !window.graphElements) {
         // Fallback to full re-render if simulation not available
         window.emptyGraph();
@@ -258,12 +258,12 @@ window.updateGraph = function(newNodes, newLinks) {
     // Update global references
     window.currentNodes = newNodes;
     window.currentLinks = newLinks;
-    window.graphElements = { 
-        link: linkAll, 
-        node: nodeAll, 
-        nodeText: nodeTextAll, 
-        linkText: linkTextAll, 
-        container 
+    window.graphElements = {
+        link: linkAll,
+        node: nodeAll,
+        nodeText: nodeTextAll,
+        linkText: linkTextAll,
+        container
     };
 };
 
